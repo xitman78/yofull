@@ -1,0 +1,24 @@
+<div class="container">
+  <form ng-submit="vm.addBlog()">
+    <div class="form-group">
+      <div class="input-group">
+        <input type="text" class="form-control" ng-model="vm.newBlog">
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn-primary">Add</button>
+        </span>
+      </div>
+    </div>
+    <!--div class="form-group">
+      <div class="input-group">
+        <input type="text" class="form-control" ng-model="vm.newPost">
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-primary">Add</button>
+        </span>
+      </div>
+    </div-->
+  </form>
+  <div ng-repeat="post in vm.blogs">
+    {{post.name}}
+  </div>
+
+</div>
